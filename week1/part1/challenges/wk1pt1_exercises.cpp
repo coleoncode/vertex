@@ -1,5 +1,6 @@
 #include <iostream>
 #include <string>
+// #include "../../util/util.cpp"
 
 using namespace std;
 
@@ -8,9 +9,11 @@ void kiloToMiles();
 void celsiusToFhrt();
 void poundsToKilograms();
 void dollarsToEuros();
-void print(string message);
+void printMessage(string message);
 
-void week1 () {
+void week1pt1 () {
+	printMessage("Welcome to Week 1 Challenges Part 1");
+	printMessage("------------------------------------");
 	greet();
 	celsiusToFhrt();
 	kiloToMiles();
@@ -29,13 +32,13 @@ void week1 () {
 void greet() {
 	string Input;
 
-	print("Please input your name");
+	printMessage("Please input your name");
 	cin >> Input;
-	print("Thank you " + Input);
+	printMessage("Thank you " + Input);
 
-	print("Please input your age");
+	printMessage("Please input your age");
 	cin >> Input;
-	print("Ah so you are " + Input + " years old!");
+	printMessage("Ah so you are " + Input + " years old!");
 }
 
 /*
@@ -48,10 +51,10 @@ void greet() {
 */
 void celsiusToFhrt() {
 	float celsius;
-	print("Enter a temperature in Celsius: ");
+	printMessage("Enter a temperature in Celsius: ");
 	cin >> celsius;
 	float fahrenheit = (celsius * 9 / 5) + 32;
-	print(to_string(celsius) + " Celsius is equal to: " + to_string(fahrenheit) + " Fahrenheight");
+	printMessage(to_string(celsius) + " Celsius is equal to: " + to_string(fahrenheit) + " Fahrenheight");
 }
 
 /*
@@ -65,11 +68,11 @@ void celsiusToFhrt() {
 void kiloToMiles() {
 	float kilometers;
 
-	print("Enter a distance in Kilometers: ");
+	printMessage("Enter a distance in Kilometers: ");
 	cin >> kilometers;
 
 	float miles = kilometers * 0.621371;
-	print(to_string(kilometers) + " KM's is equal to " + to_string(miles) + " miles");
+	printMessage(to_string(kilometers) + " KM's is equal to " + to_string(miles) + " miles");
 }
 
 /*
@@ -82,11 +85,11 @@ void kiloToMiles() {
 */
 void poundsToKilograms() {
 	float pounds;
-	print("Enter a weight in pounds: ");
+	printMessage("Enter a weight in pounds: ");
 	cin >> pounds;
 
 	float kilograms = pounds * 0.453592;
-	print(to_string(pounds) + " pounds is equal to " + to_string(kilograms) + " kilograms");
+	printMessage(to_string(pounds) + " pounds is equal to " + to_string(kilograms) + " kilograms");
 }
 
 /*
@@ -99,16 +102,16 @@ void poundsToKilograms() {
 */
 void dollarsToEuros() {
 	float dollars;
-	print("Enter a dollar amount");
+	printMessage("Enter a dollar amount");
 	cin >> dollars;
 
 	float euros = dollars * 0.85;
-	print(to_string(dollars) + " dollars is equal to " + to_string(euros) + " euros");
+	printMessage(to_string(dollars) + " dollars is equal to " + to_string(euros) + " euros");
 }
 
 // ----------------------------------
 // Util
 // ----------------------------------
-void print(string message) {
+void printMessage(string message) {
 	cout << message << endl;
 }
