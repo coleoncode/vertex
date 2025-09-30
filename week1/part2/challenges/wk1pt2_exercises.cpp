@@ -7,7 +7,7 @@ using namespace std;
 
 void getMaxNumber();
 void getNumbers();
-void multiplyNumbers(std::vector<int> numbers);
+void multiplyNumbers(vector<int> numbers);
 void reverseNumbers();
 void printMessage(string message);
 
@@ -26,7 +26,7 @@ void week1pt2() {
 //    c. Print it out to the user
 void getMaxNumber() {
   vector<int> numbers;
-  cout << "Enter 5 integers:" << endl;
+  printMessage("Enter 5 integers:");
   for (int i = 0; i < 5; ++i) {
     int num;
     cin >> num;
@@ -34,7 +34,7 @@ void getMaxNumber() {
   }
 
   int maxNum = *max_element(numbers.begin(), numbers.end());
-  cout << "The highest number is: " << maxNum << endl;
+  printMessage("The highest number is: " + to_string(maxNum));
 }
 
 /*
@@ -58,7 +58,7 @@ void multiplyNumbers(std::vector<int> numbers) {
 void getNumbers() {
   vector<int> numbers;
   int num;
-  cout << "Enter numbers (or 0 to stop):" << endl;
+  printMessage("Enter numbers (or 0 to stop):");
 
   while (true) {
     cin >> num;

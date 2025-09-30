@@ -8,5 +8,6 @@ void week1pt2();
 int main () {
   week1pt1();
   week1pt2();
+  
   return 0;
 }
