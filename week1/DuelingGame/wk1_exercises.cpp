@@ -17,13 +17,14 @@ void week1 () {
 	poundsToKilograms();
 	dollarsToEuros();
 }
+
 /*
-1. Ask for the Name and Age of a User :
-Step - by - step :
-	Declare a std::string variable for the name and an int for the age.
-	Use std::cout to ask the user for their name and std::cin to read it.
-	Use std::cout again to ask for the user's age and std::cin to read the number.
-	Print the name and age using std::cout
+	1. Ask for the Name and Age of a User :
+		Step - by - step :
+			Declare a std::string variable for the name and an int for the age.
+			Use std::cout to ask the user for their name and std::cin to read it.
+			Use std::cout again to ask for the user's age and std::cin to read the number.
+			Print the name and age using std::cout
 */
 void greet() {
 	string Input;
@@ -70,6 +71,7 @@ void kiloToMiles() {
 	float miles = kilometers * 0.621371;
 	print(to_string((double)kilometers) + " KM's is equal to " + to_string((double)miles) + " miles");
 }
+
 /*
 	Part b.Convert Pounds to Kilograms:
 		Step - by - step :
@@ -86,6 +88,7 @@ void poundsToKilograms() {
 	float kilograms = pounds * 0.453592;
 	print(to_string(pounds) + " pounds is equal to " + to_string(kilograms) + " kilograms");
 }
+
 /*
 	Part d.Convert Dollars to Euros :
 		Step - by - step :
