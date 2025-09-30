@@ -1,8 +1,10 @@
 #include <iostream>
+#include "./DuelingGame/wk1_exercises.cpp"
 
+void wk1_exercises();
 
 int main () {
-  std::cout << "Hello World" << std::endl;
-  
+  week1();
+
   return 0;
 }
