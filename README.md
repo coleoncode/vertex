@@ -1,0 +1,1 @@
+Collection of Projects for Vertex School of Game Development
