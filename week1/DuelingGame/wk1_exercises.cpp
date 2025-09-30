@@ -51,7 +51,7 @@ void celsiusToFhrt() {
 	print("Enter a temperature in Celsius: ");
 	cin >> celsius;
 	float fahrenheit = (celsius * 9 / 5) + 32;
-	print(to_string(celsius) + " Celsius is equal to: " + to_string((double)fahrenheit) + " Fahrenheight");
+	print(to_string(celsius) + " Celsius is equal to: " + to_string(fahrenheit) + " Fahrenheight");
 }
 
 /*
@@ -69,7 +69,7 @@ void kiloToMiles() {
 	cin >> kilometers;
 
 	float miles = kilometers * 0.621371;
-	print(to_string((double)kilometers) + " KM's is equal to " + to_string((double)miles) + " miles");
+	print(to_string(kilometers) + " KM's is equal to " + to_string(miles) + " miles");
 }
 
 /*
@@ -103,7 +103,7 @@ void dollarsToEuros() {
 	cin >> dollars;
 
 	float euros = dollars * 0.85;
-	print(to_string((double)dollars) + " dollars is equal to " + to_string((double)euros) + " euros");
+	print(to_string(dollars) + " dollars is equal to " + to_string(euros) + " euros");
 }
 
 // ----------------------------------
